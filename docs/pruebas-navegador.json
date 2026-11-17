@@ -1,0 +1,50 @@
+{
+  "resultado": "aprobado",
+  "anchos": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "erroresJavaScript": [],
+  "contrastes": [
+    {
+      "texto": "#ffffff",
+      "fondo": "#254a3b",
+      "relacion": 9.9
+    },
+    {
+      "texto": "#263b30",
+      "fondo": "#faf7ef",
+      "relacion": 11.2
+    },
+    {
+      "texto": "#586253",
+      "fondo": "#faf7ef",
+      "relacion": 5.97
+    },
+    {
+      "texto": "#9b4833",
+      "fondo": "#faf7ef",
+      "relacion": 5.82
+    },
+    {
+      "texto": "#42513f",
+      "fondo": "#e6eadb",
+      "relacion": 6.92
+    }
+  ],
+  "comprobaciones": [
+    "Etiquetas semánticas",
+    "Un h1 y jerarquía h2/h3",
+    "Imágenes cargadas y atributo alt",
+    "Etiquetas asociadas a todos los campos",
+    "Enlace para saltar al contenido con teclado",
+    "Filtros y aria-pressed",
+    "Validación de campos obligatorios y correo",
+    "Borrador local y copia al portapapeles",
+    "Sin desplazamiento horizontal en cuatro anchos",
+    "Movimiento reducido",
+    "Contenido disponible sin JavaScript"
+  ]
+}

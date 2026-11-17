@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cafeteosos FIME: concepto académico de cafetería universitaria. Explora el menú y prepara una sugerencia para tu próxima pausa entre clases.">
+  <meta name="theme-color" content="#254a3b">
+  <title>Cafeteosos FIME · Tu pausa entre clases</title>
+  <link rel="icon" href="assets/oso.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="cabecera">
+    <div class="contenedor barra">
+      <a class="marca" href="#inicio" aria-label="Cafeteosos FIME, inicio">
+        <img src="assets/oso.svg" width="44" height="44" alt="">
+        <span>Cafeteosos<small>FIME · CAFÉ ENTRE CLASES</small></span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul><li><a href="#inicio">Inicio</a></li><li><a href="#menu">Menú</a></li><li><a href="#contacto">Contacto <span aria-hidden="true">↗</span></a></li></ul>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido" tabindex="-1">
+    <section class="hero contenedor" id="inicio" aria-labelledby="titulo">
+      <div class="hero-texto">
+        <p class="ceja"><span class="punto" aria-hidden="true"></span> TU PAUSA ENTRE CLASES</p>
+        <h1 id="titulo">Un café.<br>Un respiro.<br><em>Seguimos.</em></h1>
+        <p class="introduccion">Para la charla después del laboratorio, el repaso antes del examen y ese ratito que también es tuyo.</p>
+        <a class="boton primario" href="#menu">Encuentra tu favorito <span aria-hidden="true">↗</span></a>
+        <p class="nota-hero">Café, algo rico y buena compañía.</p>
+      </div>
+      <figure class="hero-arte">
+        <img src="assets/pausa.svg" width="640" height="650" alt="Ilustración de un café con leche, un pan y una libreta sobre una mesa verde">
+        <figcaption><span aria-hidden="true">✦</span> Las buenas ideas también necesitan pausas.</figcaption>
+      </figure>
+    </section>
+    <div class="franja">
+      <div class="contenedor"><span>Una pausa para ti</span><span aria-hidden="true">✦</span><span>Un antojo para compartir</span><span aria-hidden="true">✦</span><span>Una idea por comenzar</span></div>
+    </div>
+    <section class="menu-seccion contenedor" id="menu" aria-labelledby="titulo-menu">
+      <div class="titulo-fila"><div><p class="ceja">HECHO PARA TU RITMO</p><h2 id="titulo-menu">¿Qué se te antoja?</h2></div><p>Algo calientito, algo frío<br>o un buen motivo para quedarte.</p></div>
+      <div class="filtros" role="group" aria-label="Filtrar productos" hidden>
+        <button type="button" data-filtro="todos" aria-pressed="true">Todo el menú</button>
+        <button type="button" data-filtro="caliente" aria-pressed="false">Café caliente</button>
+        <button type="button" data-filtro="frio" aria-pressed="false">Algo frío</button>
+        <button type="button" data-filtro="comida" aria-pressed="false">Para acompañar</button>
+      </div>
+      <p class="nota-menu">Menú de muestra · Precios ilustrativos en MXN</p>
+      <p id="estado-filtro" class="solo-lectores" role="status" aria-live="polite"></p>
+      <div class="productos">
+        <article class="producto" data-categoria="caliente">
+          <div class="producto-arte crema"><img src="assets/taza.svg" width="320" height="220" alt="Taza de café americano caliente"></div>
+          <div class="producto-info"><p class="categoria">EL CLÁSICO</p><div class="producto-titulo"><h3>Americano</h3><span class="precio">$35</span></div><p>Café negro, sencillo y directo. Una pausa sin complicaciones.</p><span class="detalle">355 ml · Caliente</span></div>
+        </article>
+        <article class="producto" data-categoria="caliente">
+          <div class="producto-arte rosa"><img src="assets/latte.svg" width="320" height="220" alt="Taza de latte con espuma de leche"></div>
+          <div class="producto-info"><p class="categoria">UN ABRAZO EN TAZA</p><div class="producto-titulo"><h3>Latte Oso</h3><span class="precio">$48</span></div><p>Espresso con leche y espuma suave para bajar un poquito el ritmo.</p><span class="detalle">355 ml · Contiene leche</span></div>
+        </article>
+        <article class="producto" data-categoria="frio">
+          <div class="producto-arte verde"><img src="assets/frio.svg" width="320" height="220" alt="Vaso de café frío con hielo"></div>
+          <div class="producto-info"><p class="categoria">PAUSA REFRESCANTE</p><div class="producto-titulo"><h3>Café frío</h3><span class="precio">$45</span></div><p>Café con hielo para esos días en los que el campus se siente más cálido.</p><span class="detalle">473 ml · Con hielo</span></div>
+        </article>
+        <article class="producto" data-categoria="frio">
+          <div class="producto-arte amarillo"><img src="assets/chocolate.svg" width="320" height="220" alt="Vaso de chocolate frío con leche"></div>
+          <div class="producto-info"><p class="categoria">EL LADO DULCE</p><div class="producto-titulo"><h3>Choco frío</h3><span class="precio">$50</span></div><p>Chocolate y leche bien fríos. Para quienes prefieren una pausa dulce.</p><span class="detalle">473 ml · Contiene leche</span></div>
+        </article>
+        <article class="producto" data-categoria="comida">
+          <div class="producto-arte amarillo"><img src="assets/pan.svg" width="320" height="220" alt="Pan de mantequilla dorado"></div>
+          <div class="producto-info"><p class="categoria">LA PAREJA DEL CAFÉ</p><div class="producto-titulo"><h3>Pan de mantequilla</h3><span class="precio">$32</span></div><p>Dorado por fuera, suave por dentro. Ideal para acompañar tu taza.</p><span class="detalle">1 pieza · Trigo y lácteos</span></div>
+        </article>
+        <article class="producto" data-categoria="comida">
+          <div class="producto-arte crema"><img src="assets/sandwich.svg" width="320" height="220" alt="Sándwich con queso, jitomate y hojas verdes"></div>
+          <div class="producto-info"><p class="categoria">ENTRE CLASE Y CLASE</p><div class="producto-titulo"><h3>Sándwich del campus</h3><span class="precio">$65</span></div><p>Queso, jitomate y hojas verdes entre dos rebanadas de pan tostado.</p><span class="detalle">1 pieza · Trigo y lácteos</span></div>
+        </article>
+      </div>
+    </section>
+    <section class="pausa contenedor" aria-labelledby="titulo-pausa">
+      <div class="sello" aria-hidden="true"><img src="assets/oso.svg" width="95" height="95" alt=""><span>CAFÉ CON<br>ESPÍRITU OSO</span></div>
+      <div><p class="ceja">MÁS QUE UNA TAZA</p><h2 id="titulo-pausa">También se vale<br>hacer una pausa.</h2></div>
+      <p>Cafeteosos FIME es una idea de cafetería para la comunidad universitaria: un lugar imaginado para compartir apuntes, celebrar un avance y empezar la siguiente clase con otra energía.</p>
+    </section>
+    <section class="contacto contenedor" id="contacto" aria-labelledby="titulo-contacto">
+      <div class="contacto-texto"><p class="ceja">TE ESCUCHAMOS</p><h2 id="titulo-contacto">Las mejores ideas<br>empiezan con<br><em>un hola.</em></h2><p>¿Qué te gustaría encontrar en Cafeteosos? Cuéntanos tu bebida ideal o comparte una sugerencia para este proyecto.</p><div class="aviso"><strong>Un concepto universitario</strong><p>Este sitio es una demostración académica, sin afiliación oficial con FIME. Los productos y precios son ejemplos; no se reciben pedidos.</p></div></div>
+      <form id="formulario-contacto" class="formulario" aria-describedby="nota-formulario">
+        <h3>Prepara tu mensaje</h3>
+        <p id="nota-formulario">Generaremos un borrador para que puedas copiarlo. No se envía ni se guarda información.</p>
+        <div class="campos-dobles"><div><label for="nombre">Tu nombre <span>(obligatorio)</span></label><input id="nombre" name="nombre" autocomplete="given-name" maxlength="80" required></div><div><label for="correo">Tu correo <span>(opcional)</span></label><input id="correo" name="correo" type="email" autocomplete="email" maxlength="120"></div></div>
+        <label for="tema">¿De qué quieres hablar?</label><select id="tema" name="tema"><option>Una sugerencia para el menú</option><option>Una idea para la cafetería</option><option>Un comentario sobre el sitio</option></select>
+        <label for="mensaje">Tu mensaje <span>(obligatorio)</span></label><textarea id="mensaje" name="mensaje" rows="4" maxlength="500" required placeholder="Mi pausa ideal tendría..."></textarea>
+        <div class="contador"><span id="conteo">0</span>/500 caracteres</div>
+        <button class="boton primario" type="submit" disabled>Preparar mensaje <span aria-hidden="true">↗</span></button>
+        <noscript><p>Activa JavaScript para preparar el borrador. Puedes explorar el menú y las otras secciones sin él.</p></noscript>
+        <div id="borrador" class="borrador" hidden><h4>Tu borrador está listo</h4><p id="texto-borrador"></p><button class="boton secundario" id="copiar" type="button">Copiar mensaje</button></div>
+        <p id="estado-formulario" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer><div class="contenedor pie"><a class="marca" href="#inicio"><img src="assets/oso.svg" width="38" height="38" alt=""><span>Cafeteosos<small>FIME · PROYECTO ACADÉMICO</small></span></a><p>Hecho por Ángel Martínez.<br>Laboratorio de Programación Web · 2026</p><a href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a></div></footer>
+</body>
+</html>
