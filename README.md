@@ -8,7 +8,11 @@ Presentar un concepto de cafetería que se pueda explorar desde computadora y te
 
 ## Publicación
 
-La publicación en GitHub Pages y el repositorio de `code0167` están pendientes de conectar la cuenta. Esta sección se actualizará con enlaces verificados después del despliegue.
+- Sitio: [https://code0167.github.io/cafeteosos-fime/](https://code0167.github.io/cafeteosos-fime/)
+- Repositorio público: [code0167/cafeteosos-fime](https://github.com/code0167/cafeteosos-fime)
+- Publicación: GitHub Pages desde la rama `main`, carpeta raíz.
+
+Para actualizarlo, modifica los archivos y envía los cambios a `main`; GitHub Pages genera una nueva publicación.
 
 ## Tecnologías
 
@@ -21,10 +25,10 @@ La publicación en GitHub Pages y el repositorio de `code0167` están pendientes
 ## Estructura del proyecto
 
 ```text
-  index.html       Estructura y contenido
-  styles.css       Diseño, adaptación y accesibilidad visual
-  script.js        Filtros y borrador de contacto
-  assets/          Logotipo e ilustraciones SVG originales
+index.html       Estructura y contenido
+styles.css       Diseño, adaptación y accesibilidad visual
+script.js        Filtros y borrador de contacto
+assets/          Logotipo e ilustraciones SVG originales
 docs/
   capturas/        Evidencias de escritorio y móvil
   validacion-html.json
@@ -111,7 +115,7 @@ Las vistas completas están en [escritorio](docs/capturas/escritorio.png) y [mó
 | Al menos un breakpoint | Consultas de medios a 1000, 700 y 360 px |
 | Accesibilidad básica | Alt, labels, jerarquía, teclado, contraste y mensajes de estado |
 | Validación de HTML y CSS | Resultados del W3C conservados en docs |
-| Publicación y repositorio | Pendiente de conexión a GitHub y despliegue |
+| Publicación y repositorio | Repositorio público en code0167 y publicación mediante GitHub Pages |
 
 ## Créditos y alcance
 
